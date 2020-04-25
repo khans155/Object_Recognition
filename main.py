@@ -1,11 +1,14 @@
+
 import cv2
-import numpy as np
+import numpy
+
+play = 4
+
 
 def main():
-    img = cv2.imread('images/1.jpg')
-    cv2.imshow('image', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    global play
+    play = play + 4
+    print(f'Number is: {play}')
 
 
 main()
